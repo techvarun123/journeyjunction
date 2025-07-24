@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+#section1 {
+  height: 600px; 
+  background-color: pink;
+}
+
+#section2 {
+  height: 600px;
+  background-color: yellow;
+}
+#section3 {
+  height: 600px;
+  background-color: skyblue;
+}
+</style>
+</head>
+<body>
+
+<h1>Smooth Scroll</h1>
+<div>
+    
+    <a href="#section1">first</a><br>
+    <a href="#section2">second</a><br>
+    <a href="#section3">third</a>
+</div>
+<div class="main" id="section1">
+  <h2>Section 1</h2>
+  <p>Click on the link to see the "smooth" scrolling effect.</p>
+  <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+ <br> <a href="#section3">click to reach section 3</a>
+  <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
+</div>
+
+<div class="main" id="section2">
+  <h2>Section 2</h2>
+  <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+</div>
+<div class="main" id="section3">
+<h2>Section 3</h2>
+  <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a><br>
+  <a href="#section2">click me to go section 2</a>
+</div>
+
+
+</body>
+</html>
